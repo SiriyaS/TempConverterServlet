@@ -1,0 +1,20 @@
+<%-- 
+    Document   : converted
+    Created on : Nov 6, 2021, 11:15:40 PM
+    Author     : siriya_s
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Result</title>
+    </head>
+    <body>
+        <h1>Temperature Converter</h1>
+        <%out.println(request.getParameter("inputTemp")+"\tFahrenheit");%>
+        Equals to <strong><% int temp = Integer.parseInt(request.getParameter("inputTemp"));
+        out.println((temp - 32) * 5/9 +"\tCelsius");%></strong>
+    </body>
+</html>
